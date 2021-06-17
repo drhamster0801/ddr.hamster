@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html style="height:100%;width:100%">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>dr.hamster</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+			a {
+  color: #000000;
+  font-size: 19px;
+  text-decoration: none;
+  background-image: linear-gradient(#000000, #000000);
+  background-position: left bottom;
+  background-size: 0 2.5px;
+  background-repeat: no-repeat;
+  transition: background-size 0.15s linear;
+}
+
+a:hover {
+  background-size: 100% 2.5px;
+}
+			<!--
+			#images{
+			position:absolute;
+			float:left;
+			margin-top:50px;
+			margin-left:15%;
+			height:50%;
+			}
+			-->
+
+			<!--
+			#平面設計照片{
+			position:absolute;
+			float:left;
+			color:white;
+			background-color:black;
+			margin-top:90px;
+			margin-left:15%;
+			height:160px;width:290px;
+			padding-top:20px;
+			padding-left:10px;
+			padding-right:10px
+			}　
+			-->
+
+			 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul.slides {
+  position: relative;
+  width: 100%;
+  height:600px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+  overflow: hidden;
+}
+
+li.slide {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 120px;
+  color: #fff;
+  transition: .5s transform ease-in-out;
+}
+
+.slide:nth-of-type(1) {
+  background-color:white;
+}
+
+.slide:nth-of-type(2) {
+  background-color:white;
+  left: 100%;
+}
+
+.slide:nth-of-type(3) {
+  background-color:white;
+  left: 200%;
+}
+
+input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.controls-visible label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 2px solid #fff;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+  transform: translatex(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+  transform: translatex(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+  transform: translatex(-200%);
+}
+
+
+/* Left/Right Button Classes Below */
+
+.navigator {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: none;
+}
+
+.navigator i {
+  font-size: 32px;
+  color #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .navigator:nth-of-type(2) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .navigator:nth-of-type(3) {
+  display: flex;
+}
+	</style>
+		
+</head>
+<body id="body">
+	<a name="top" ><header style="color:white;background:black;height:40px;width:100%;margin-top:0px;margin-left:0px;padding-top:20px">
+		<a style="padding-left:20px;color:white"><fone size="3">This is Dr.hamster blog,welcome to my blog . </a>
+	</header>
+	<nav style="color:white;margin-top:50px;margin-left:10px;height:100px;width:border">
+			<div class="top_slide_cener_nav" style="width:border">
+					<a href="/" class="fix"style="color:black;padding-top:0px;padding-left:0px;font-size:14px ">
+						<img src="img/logo.png" alt="logo"></a>
+				<nobr>
+					<a href="#contents" style="color:black;padding-top:0px;padding-left:50px "><font size="4">CONTENTS</font></a>
+					<a href="#graphic" style="color:black;padding-top:0px;padding-left:20px "><font size="4">GRAPHIC DESIGN</font></a>
+					<a href="#mixed" style="color:black;padding-top:0px;padding-left:20px "><font size="4">MIXED MEDIA DESIGN</font></a>
+					<a href="https://instagram.com/ddr.hamster?igshid=1407bidjezef4" style="color:black;padding-top:0px;padding-left:20px "><font size="4">INSTAGRAM</font></a>
+				</nobr>
+			</div>
+	</nav>
+	<article style="background-color:black">
+		<center>
+			<a href="/" class="Introduction"style="color:black;padding-top:0px;padding-left:0px">
+				<video style="height:100%;width:70%" src="video/01.mp4" muted src="" autoplay loop alt="introduction" ></video> </a>
+		</center>
+		<section style="color:black;background-color:white;height:100%;width:100%">
+			<center><div style="color:black;height:700px;width:100%;padding-top:50px">
+				<a name="contents"><div style="height:50px;width:100%"></a>
+				<font size="6"><h1><center>CONTENTS</center></h1></font>
+				<a href="#graphic"><img style="padding-top:50px;width:125px" src="img/01.png"alt="目錄1"></a>
+				<a href="#mixed"><img style="padding-left:20px;padding-top:50px;width:125px" src="img/02.png" alt="目錄2"></a>
+				<a href="#comingsoon"><img style="padding-left:20px;padding-top:50px;width:125px" src="img/03.png" alt="目錄3" title="即將登場"></a>
+				<a href="#comingsoon"><img style="padding-left:20px;padding-top:50px;width:125px" src="img/04.png" alt="目錄4" title="即將登場"></a>
+			</div></center>
+			<div style="margin-top:100px;margin-right:50px" align="right">
+				<a href="#TOP" style="color:black"><font size="4">TOP</font></a></div>
+			<div style="background-color:white;height:50px"></div>
+		</section>
+		<section>
+			<a name="graphic">
+				<ul class="slides">
+  <input type="radio" id="control-1" name="control" checked>
+  <input type="radio" id="control-2" name="control">
+  <input type="radio" id="control-3" name="control">
+  
+  <!--  Left/Right Button  -->
+  <div class="navigator slide-1">
+    <label for="control-3">
+      <i class="fas fa-chevron-left"></i>
+    </label>
+    <label for="control-2">
+      <i class="fas fa-chevron-right"></i>
+    </label>
+  </div>
+  
+  <div class="navigator slide-2">
+    <label for="control-1">
+      <i class="fas fa-chevron-left"></i>
+    </label>
+    <label for="control-3">
+      <i class="fas fa-chevron-right"></i>
+    </label>
+  </div>
+  
+  <div class="navigator slide-3">
+    <label for="control-2">
+      <i class="fas fa-chevron-left"></i>
+    </label>
+    <label for="control-1">
+      <i class="fas fa-chevron-right"></i>
+    </label>
+  </div>
+  <!--  /Left/Right Button  -->
+  
+  <li class="slide"><img src="img/GRAPHIC DESIGN02.png" border=0 style="width:100%"></li>
+  <li class="slide"><img src="img/GRAPHIC DESIGN03.png" border=0 style="width:100%"></li>
+  <li class="slide"><img src="img/GRAPHIC DESIGN04.png" border=0 style="width:100%"></li>
+  
+  <div class="controls-visible">
+    <label for="control-1"></label>
+    <label for="control-2"></label>
+    <label for="control-3"></label>
+  </div>
+</ul>
+		</section>
+		<section style="background-color:white">
+			<div style="color:black;background-color:white;height:450px">
+				<center><font size="5"><h2 style="padding-top:100px">GRAPHIC DESIGN</h2></font></center>
+				<a href="https://www.instagram.com/p/CKjcRSnF_U0/"><img id="images" src="img/design01.png" title="第二屆罐軍募集" ></a>
+				<a href="https://www.facebook.com/%E5%85%88%E5%97%87%E5%AE%AE%E9%BC%93%E8%97%9D%E5%9C%98-1078028742314558/"><img  id="images"  style="margin-left:40%" src="img/design02.jpg" title="先嗇宮鼓藝團" ></a>
+				<a href="https://www.instagram.com/p/CFUxSWklEKB/"><img  id="images" style="margin-left:65%" src="img/design03.jpg" title="RED William" >
+			</div>	
+			<font size="2" face="微軟正黑體"><div style="background-color:white;width:100%;height:350px">
+				<div id="平面設計照片">
+				<h1>第二屆罐軍募集-鮪鮪道來</h1><p>採用日式和柄花紋讓當作此次鮪魚罐頭的外包裝設計，加工後的燙金效果使整個包裝又添加一些層次，點擊圖片觀看更多鮪魚罐頭。</p></div>
+				<div id="平面設計照片" style="margin-left:40%"><h1>先嗇宮鼓藝團</h1><p>毛筆字體加上煙霧繚繞的效果，為先嗇宮鼓藝團更增加一些氣勢，點擊圖片了解更多關於先嗇宮鼓藝團。</p></div>
+				<div id="平面設計照片"style="margin-left:65%"><h1>DJ William LOGO</h1><p>以霓虹燈的方式呈現，logo 也將DJ William 的寵物貓結合 red 的藝術字樣，在字體方面也結合顧客期望的手寫字字體。</p></div>
+			</div></font>
+			<div style="margin-top:100px;margin-right:50px" align="right">
+				<a href="#contents" style="color:black"><font size="4">CONTENTS</font></a></div>
+			<div style="background-color:white;height:50px"></div>
+		</section>
+		<section>
+			<a name="mixed">
+				<center><img style="width:100%;background-color:black" src="img/mixedmediadesign.png" alt="多媒材設計"></center></a>
+		</section>
+		<section style="background-color:white">
+			<div style="color:black;background-color:white;height:450px">
+				<center><font size="5"><h2 style="padding-top:100px">MIXED MEDIA DESIGN</h2></font></center>
+				<a href="https://www.instagram.com/p/CEqtYNPljMq/"><img  id="images02" style="margin-left:5%;height:85%" src="img/mixedmediadesign01.png" title="千里跋涉" ></a>
+				<a href="https://www.instagram.com/p/B64XVfcFE1w/"><img  id="images02"  style="height:85%" src="img/mixedmediadesign02.png" title="鋕,玫瑰少年" ></a>
+				<a href="https://www.instagram.com/p/By8qD_QlV8d/"><img  id="images02" style="height:85%" src="img/mixedmediadesign03.png" title="籠中鳥" ></a>			
+			</div>
+			<br>
+			<div style="margin-top:100px;margin-right:50px" align="right">
+				<a href="#contents" style="color:black"><font size="4">CONTENTS</font></a></div>
+			<div style="background-color:white;height:50px"></div>
+		</section>	
+		<section>
+			<a name="comingsoon">
+				<center><img style="width:100%;background-color:black" src="img/COMINGSOON.png" alt="即將公開"></center>
+		</section>
+	</article>
+
+
+</body>
+</html>
